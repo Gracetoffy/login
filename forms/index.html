@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Gracetoffy's Simple form [HTML, CSS & JS]</h1>
+
+<div id="result">
+    <div id="close"> Close<i class="fa-solid fa-xmark"></i></div>
+    <h2 class="salutation">Hey <span class="name"></span>,</h2>
+    <p class="message">
+        Thanks for registering with us :),
+        below is a list of the data you entered,
+        ensure they are accurate.</p>
+        <table>
+           <tbody>
+            <tr>
+                <td>Username</td>
+                <td class="name"> </td>
+            </tr>
+            <tr>
+                <td>Favourite color</td>
+                <td class="color"></td>
+            </tr>
+            <tr>
+                <td>Email address</td>
+                <td class="email"></td>
+            </tr>
+            
+            <tr>
+                <td>Password</td>
+                <td class="password"></td>
+            </tr>
+
+            <tr>
+                <td>Date Of Birth</td>
+                <td class="dob"></td>
+            </tr>
+           </tbody>
+
+        </table>
+        <p class="message">
+        Now go ahead and make your own 
+        form and feel free to edit it 
+        to suit your own style and prefrences.
+    </p>
+   <div class="subscription" style="float:right;">
+    - Gracetoffy 
+   </div>
+
+
+    </div>
+    <form>
+       
+         <br>
+         <label for="">Email </label>
+         <br>
+         <input type="email" name="" id="email" placeholder="Enter Email address.." class="text">
+         <br>
+         <label for="user name">Username</label>
+         <br>
+         <input type="text" name="user-name" id="userName" placeholder="Enter Username.." class="text" required>
+         <br>
+         <label for="password">Password</label>
+         <br>
+         <br>
+         <input type="password" name="password" id="password" placeholder="Enter Password.." class="text"required> <br>
+         
+         <label for="">Date of Birth</label>
+         
+         <br>
+         <input type="date" name="" id="DOB" placeholder="Enter DOB.." class="text"required>
+         <label for="">Favourite Colour</label>
+         <br>
+         <br>
+         <input type="color" name="" id="color"required>
+         <a href="#">Terms & conditions</a>
+         <br>
+
+         <input type="checkbox" name="" id="accept">
+         <label for="agreement">I accept all Terms & Conditions</label>
+         <button  id="submit" onclick="showResult()">Login</button>
+         
+
+    </form>
+
+    
+    <script src="./script.js">
+
+    </script>
+    
+</body>
+</html>
